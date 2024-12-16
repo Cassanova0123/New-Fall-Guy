@@ -1,7 +1,25 @@
-# New-Fall-Guy
+# Fall-GD
 Examen Finale Programmation Automne 2024 Collège LaSalle
 Description : Fall Guys est un jeu de plateforme multijoueur à la troisième personne, dont le format s'approche du battle royale10. Le joueur prend le contrôle d'un "haricot" (Fall Guy en anglais) dont il peut personnaliser l'apparence.Le principe de base du jeu repose sur la course d'obstacles : le joueur doit parvenir à son objectif en étant ralenti le moins possible par les obstacles sur le terrain ou par les autres joueurs. Le jeu dispose d'un moteur physique permettant de gérer les collisions et le sens de l'équilibre des personnages. Par exemple, il est possible de faire tomber un haricot en lui rentrant dedans à une vitesse suffisante. De nombreux obstacles visent à déstabiliser ou à éjecter les joueurs hors de l'aire de jeu
+
+ Comment fonctionne les scores :
+- Les Perfommances
+- Les points
+- Les parties gagnées
 Hiérarchie de la classe :
 Joueur(classe A)
 Attributs:
-
+- Mouvement Speed
+- Direction
+- Position
+- Collision
+Door (classe B)
+- Représente le multiple obstacles présent sur le parcours du joeuer.
+DoorManager ( classe C)
+- Gère les différentes portes du jeu
+CameraPosition (classe D)
+- Une synchronisation de la caméra par rapport au joueur pour avoir une vision plus fluide
+PlayerData ( classe E)
+- Stocke les données comme les collisions avec les portes , le nombre de fois qu'il est tombé , son score etc..
+Méthode Utilisée : 
+-Dijistra : Cette méthode cherche le chemin à prendre et heuristique d'optimisation pour évaluer chaque position à parcourir 
